@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#const{
+  margin-top: 2em;
+  margin: 2em;
+  width: 60vw;
+  border-style: solid;
+  border-width: 4px;
+  border-color: tan; 
+}
+
+body{
+  width: 80vw;
+  font-family: 'Playfair Display', serif;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: tan;
+}
+
+head {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  color: #7E5187;
+  background-color: rgba(210, 180, 140, 0.658)
+}
+
+.header{
+  background-image: url("resources/header1.jpg");
+  padding-top: 7vw;
+  height: 7vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  text-decoration:none;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.main-text{
+  background-color: white;
+  min-height: 70vh;
+  padding: 15px;
+}
+
+.heading{
+  height: 100px;
+  text-align:center;
+}
+h2 {
+  text-align: left;
+  font-size: 1em;
+  color: rgb(187, 149, 24);
+}
+
+h3 {
+  text-align: left;
+  color: #7E5187;
+}
+
+p{
+  text-align: left;
+  font-size: 1.2em;
+  margin: 20px 10px 10px 15px;
+}
+
+span{
+  color: rgb(187, 149, 24);
+  font-size: 1.4em;
+
+}
+#amendment_var{
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  background-color: #f9f9f9; 
+}
+
+summary{
+  text-align: left;
+  font-size: 2em;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  color: rgb(219, 174, 24);
+}
+details{
+  text-align:left;
+}
+
+.analysis{
+  font-size: 1em;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 75vw;
+  padding-left: 5px;
+}
+
+.dropdown:hover span{
+  position: relative;
+  display: inline-block;
+  width: 75vw;
+  padding-left: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: yellow;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 12px 16px;
+  box-shadow: 0px 5px 12px 0px rgba(214, 188, 205, 0.281);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 70vw;
+  z-index: 100;
+}
+
+.dropdown-section {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 75vw;
+  padding: 12px 16px;
+  box-shadow: 0px 5px 12px 0px rgba(214, 188, 205, 0.281);
+}
+
+.dropdown:hover .dropdown-section {
+  display: block;
+   z-index: 100;
+}
+
+iframe{
+  width: 50vw;
+  height: 30vw;
+  margin-bottom: 7vw;
+
+} 

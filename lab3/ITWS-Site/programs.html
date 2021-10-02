@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- INITIALIZING/NECESSARY INCLUDES -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Programs | Science at Rensselaer</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- NAVBAR/HEADER -->
+    <div class = "header">
+      <a href="index.html"><h1>Information Technology and Web Science</h1></a>
+    </div>
+    <div id="navbar">
+      <a href="index.html">HOME</a>
+      <a href="programs.html">PROGRAMS</a>
+      <a href="fac.html">FACULTY</a>
+      <a href="news.html">NEWS</a>
+      <a href="social.html">SOCIALS</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+    <div class = "main-text">
+      <div class="back2">
+      <section class="title">
+        <h3>PROGRAMS</h3>
+      </section>
+      <section id="under">
+        <section class="currDesc">
+        <h4>B.S. in Information Technology and Web Science.</h4>
+        <p>Interdisciplinary From Day One.</p>
+        <p>In a world in which information technology affects virtually everything we do, there is a demand for an academic program that offers students the deepest understanding of the Web.  As an ITWS student, you will investigate issues related to security, trust, privacy, content value, and the development of the Web in the future.</p>
+        <p> You will take a core set of courses on Web and IT development and management, along with courses in your concentration, selected from more than 20 options, including arts, engineering, management, communications, artificial intelligence, Web systems, and medicine.</p>
+        </section>    
+
+        <section class="curr" onclick="toggle('curr1')">
+          <strong><p>ITWS Core Requirements (24 - 26 credits)</p></strong>
+          <p>The ITWS core requirements establish a solid foundation for applying ITWS to any discipline...</p>
+          <section id="curr1">
+            <ol>
+              <li>Introduction to Information Technology and Web Science - 4 credits</li>
+              <li>Web Systems Development - 4 credits</li>
+              <li>Database Systems or Data Resource Management (choose 1) - 4 credits</li>
+              <li>Information Technology and Web Science Capstone or Senior Thesis (choose 1) - 4-6 credits</li>
+              <li>Web Science Systems Development - 4 credits</li>
+              <li>Managing IT Resources - 4 credits</li>
+            </ol>
+          </section>
+        </section>
+        <section class="curr" onclick="toggle('curr2')">
+          <strong><p>Concentration Requirement (44 credits)</p></strong>
+          <p>The required concentration provides an opportunity for in-depth study of an ITWS application area. Concentration options include arts, communication and networks, law, management information systems, medicine, psychology, and numerous others. In consultation with a faculty adviser, students may also design their own concentration through the selection of courses that match their individual interests...</p>
+          <section id="curr2">
+            <strong><p>Along with the 8 required courses (32 credits) for your concentration, you must take the corresponding required technical track courses:</p></strong>
+
+            <table id="concTable" border="1" cellpadding="6" cellspacing="0">
+              <tr>
+                <td>TECHNICAL TRACK</td>
+                <td>CONCENTRATIONS</td>
+                <td>COURSES</td>
+              </tr>
+              <tr>
+                <td><strong>Computer Engineering</strong></td>
+                <td>
+                  <ul>
+                    <li>Civil Engineering</li>
+                    <li>Computer Hardware</li>
+                    <li>Computer Networking (hardware focused)</li>
+                    <li>Mechanical/Aeronautical Engineering</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>ECSE-2610 Computer Components and Operations</li>
+                    <li>ENGR-2350 Embedded Control</li>
+                    <li>ECSE-2660 Computer Architecture, Networking and Operating Systems</li>
+                  </ul>
+                  </td>
+              </tr>
+              <tr>
+                <td><strong>Computer Science</strong></td>
+              <td>
+              <ul><li>Cognitive Science</li>
+              <li>Computer Networking (software focused)</li>
+              <li>Information Security</li>
+              <li>Machine and Computational Learning</li>
+              </ul></td>
+              <td>
+              <ul><li>CSCI-2200 Foundations of Computer Science</li>
+              <li>CSCI-2300 Introduction to Algorithms</li>
+              <li>CSCI-2500 Computer Organization</li>
+              </ul></td>
+              </tr><tr><td><strong>Information Systems</strong></td>
+              <td>
+              <ul><li>Arts</li>
+              <li>Communication</li>
+              <li>Economics</li>
+              <li>Entrepreneurship</li>
+              <li>Finance</li>
+              <li>Management Information Systems</li>
+              <li>Medicine</li>
+              <li>Pre-Law</li>
+              <li>Psychology</li>
+              <li>STS</li>
+              </ul></td>
+              <td>
+              <ul><li>CSCI-2200 Foundation of Computer Science</li>
+              <li>CSCI-2500 Computer Organization</li>
+              <li>One of the following:
+              <ul><li>MGMT-2100 Managerial Statistics</li>
+              <li>BIOL-4200 Biostatistics</li>
+              <li>
+              <div>CSCI-2300 Introduction to Algorithms</div>
+              </li>
+              </ul></li>
+              </ul></td>
+              </tr><tr><td><strong>Web Science</strong></td>
+              <td>
+              <ul><li>Data Science</li>
+              <li>Science Informatics</li>
+              <li>Web Technologies</li>
+              </ul></td>
+              <td>
+              <ul><li>CSCI-2200 Foundations of Computer Science</li>
+              <li>CSCI-2300 Introduction to Algorithms</li>
+              <li>CSCI-2500 Computer Organization</li>
+              </ul></td>
+              </tr>
+            </table>
+          </section>
+        </section>
+        <section class="curr" onclick="toggle('curr3')">
+          <strong><p>Degree Requirements (60 credits)</p></strong>
+          <p>The Rensselaer requirements ensure the degree’s breadth and its consistency with long-established Rensselaer traditions...</p>
+            <section id="curr3">
+            <strong><p>Math/Science Requirements (24 credits)</p></strong>
+            <ol>
+              <li>Calculus 1 - 4 credits</li>
+              <li>Math Elective - 4 credits</li>
+              <li>Computer Science 1 - 4 credits</li>
+              <li>Data Structures - 4 credits</li>
+              <li>Physical Science Elective - 4 credits</li>
+              <li>Life Science Elective - 4 credits</li>
+            </ol>
+            <strong><p>Humanities, Arts and Social Science Requirements (24 credits)</p></strong>
+            <ol>
+              <li>IT and Society - 4 credits</li>
+              <li>Intro to Human Computer Interaction - 4 credits</li>
+              <li>Humanities Elective - 4 credits</li>
+              <li>Social Science Elective - 4 credits</li>
+              <li>2 HASS Electives - 8 credits</li>
+            </ol>
+            <strong><p>Free Elective Requirement (12 credits)</p></strong>
+            <ol><li>3 Free Electives - 12 credits</li></ol>
+          </section>
+        </section>
+        <section class="curr" onclick="toggle('curr4')">
+          <strong><p>ITWS Minor</p></strong>
+          <p>The ITWS minor requires a minimum of 16 credit hours that must be approved by the minor advisor in ITWS....</p>
+          <section id="curr4">
+            <ol>
+              <li>ITWS-1100 Introduction to ITWS</li>
+              <li>ITWS-4310 Managing IT Resources</li>
+              <li>Humanities Elective (one of):</li>
+                <ol>
+                  <li>ITWS-1220 IT and Society</li>
+                  <li>COMM-4790 Social Impact of Electronic Media</li>
+                </ol>
+              <li>Technical Elective (one of):</li>
+                <ol>
+                  <li>ITWS-2110 Web Systems Development</li>
+                  <li>CSCI-2300 Introduction to Algorithms</li>
+                  <li>CSCI-4380 Database Systems</li>
+                  <li>MGMT-4170 Data Resource Management</li>
+                </ol>
+            </ol>
+          </section>
+        </section>
+      </section>
+      <section id="grad">
+        <section class="currDesc">
+        <h4>M.S. in Information Technology and Web Science</h4>
+        <p>Solve problems in data- and information-intensive world.</p>
+        <p>The Rensselaer M.S. in Information Technology balances the study of management strategies and technology leadership with advanced course work in an IT concentration. Students complete a suite of core and capstone courses and also select three to five additional courses to complete their concentrations. Professional and research tracks are offered for the M.S. in IT degree.</p>
+        <p>All students develop a Plan of Study with their IT Advisor which includes a minimum of 10 courses (30 credits), a minimum of six courses (eighteen credits or more) at the 6000 graduate level, and no more than 5 courses from the Lally School of Management and Technology (prefix MGMT).</p>
+        </section>
+        <section class="curr" onclick="toggle('curr5')">
+          <strong><p>CORE</p></strong>
+          <p>Master's students take one required course from each of the five core areas listed below to gain a breadth of IT knowledge.  Advance core options are available.</p>
+          <section id="curr5">
+            <ol>
+              <li>DataBase Systems</li>
+              <li>Data Analytics</li>
+              <li>Software Design and Engineering</li>
+              <li>Management of Technology (Research track will not be required to take this core class.)</li>
+              <li>Human Computer Interaction</li>
+            </ol>
+          </section>
+        </section>
+        <section class="curr" onclick="toggle('curr6')">
+          <strong><p>CONCENTRATIONS</p></strong>
+          <p>Concentrations are designed to provide an in-depth experience in the application of Information Technology.  Students choose from one of eleven concentrations and complete a minimum of 3 courses in the concentration.</p>
+          <section id="curr6">
+            <ol>
+              <li>Cognitive Computing</li>
+              <li>Data Science and Analytics</li>
+              <li>Information Dominance</li>
+              <li>Management Information Systems</li>
+              <li>Web Science</li>
+              <li>Software Design and Engineering</li>
+              <li>Financial Engineering</li>
+              <li>Human-Computer Interaction</li>
+              <li>Database and Intelligent Systems</li>
+              <li>Networking</li>
+              <li>Information Systems Engineering</li>
+              <li>Information Security</li>
+            </ol>
+          </section> 
+        </section>
+        <section class="curr" onclick="toggle('curr7')">
+          <strong><p>PROFESSIONAL TRACK</p></strong>
+          <p>Capstone Course</p>
+          <section id="curr7">
+            <p>The M.S. in IT Capstone course integrates the knowledge and professional practice of IT Core and Concentration courses. Topics in database systems, networking, data analytics, software design and engineering, management of technology, human computer interaction, and ethics are applied within a framework of global e-business strategy. The course utilizes an Information Technology Team Project with a real organization to practice the major concepts of the IT Degree. Team members select, develop, and present a significant technology implementation project, incorporating strategy, systems development and business planning.</p>
+          </section> 
+        </section>
+        <section class="curr">
+          <strong><p>RESEARCH TRACK</p></strong>
+          <p>The research track for the M.S. in IT allows a student to complete a two semester Master's Project or Master's Thesis.</p>
+        </section>
+      </section>
+      </div>
+    </div>
+  </body>
+</html>

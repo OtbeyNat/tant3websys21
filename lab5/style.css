@@ -1,0 +1,400 @@
+* {
+	color: #2d4654;
+	font-family: "Noto Sans", Calibri, sans-serif;
+}        
+
+body {
+	max-width: 650px;
+	margin: auto auto 3em auto;
+	font-size: 100%;
+  background: white;
+}
+
+.content {
+  background: rgba(255, 166, 0, 0.705);
+  padding: 20px 20px 20px 20px;
+  border: 4px rgb(214, 139, 0) solid;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h1 > a {
+	text-decoration: none;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.subtitle {
+	text-align: right;
+	margin: 0;
+	font-style: italic;
+}
+
+h2, h3, h4, a, .subtitle {
+	color: #243b4a;
+}
+
+hr {
+	border-color: #805e73;
+}
+
+pre {
+	padding: .5em;
+	overflow: auto;
+}
+
+.navbar, .game-buttons, .game-forms, .messages, .answers {
+	text-align: center;
+}
+
+.game-buttons > button, #player-guess > input, .restart-random > button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#playfield-bg > img {
+  width: 100px;
+}
+
+#beeimg 
+
+#bee {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+#ccomb1, #ccomb2, #ccomb3, #ccomb4, #ccomb5, #ccomb6, #ccomb7 {
+  height: 80px;
+  width: 80px;
+}
+
+#comb1 {
+  left: 1px;
+  top: 51px;
+}
+
+#ccomb1 {
+  left: 11px;
+  top: 61px;
+}
+
+#comb2 {
+  left: 80px;
+  top: 1px;
+}
+
+#ccomb2 {
+  left: 90px;
+  top: 11px;
+}
+
+#comb3 {
+  left: 159px;
+  top: 51px;
+}
+
+#ccomb3 {
+  left: 169px;
+  top: 61px;
+}
+
+#comb4 {
+  left: 1px;
+  top: 149px;
+}
+
+#ccomb4 {
+  left: 11px;
+  top: 159px;
+}
+
+#comb5 {
+  left: 80px;
+  top: 199px;
+}
+
+#ccomb5 {
+  left: 90px;
+  top: 209px;
+}
+
+#comb6 {
+  left: 159px;
+  top: 149px;
+}
+#ccomb6 {
+  left: 169px;
+  top: 159px;
+}
+#comb7 {
+  left: 80px;
+  top: 100px;
+}
+#ccomb7 {
+  left: 90px;
+  top: 110px;
+}
+
+#footer {
+	display: block;
+	text-align: right;
+	margin: 0;
+	font-style: italic;
+}
+
+#game {
+	width: 260px;
+	height: 300px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+  border: 4px rgb(219, 154, 32) solid;
+}
+
+.message {
+	display: none;
+	color: #ff6961;
+}
+
+#no-message.message {
+	display: inline;
+}
+
+#pangram.message {
+	display: none;
+	color: #0047ab;
+}
+
+.score {
+	width: 100%;
+	
+}
+
+.score > div {
+  width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+  background: rgb(255, 181, 45);
+  padding-bottom: 2vh;
+}
+
+.wordlists {
+	width: 100%;
+	height: 200px;
+  margin-bottom: 4vh;
+}
+
+.wordlists > div {
+  width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.update-answers {
+	height: 150px;
+	border: solid;
+	overflow: scroll;
+}
+
+#random-answers {
+	display: none;
+	text-align: center;
+}
+
+#update-random {
+	display: block;
+	width: 225px;
+	height: 150px;
+	border: solid;
+	float: right;
+	overflow: auto;
+}
+
+.restart {
+	width: 100%;
+  margin-top: 2vh;
+}
+
+.restart > div {
+  width: 50%;
+	float: left;
+	text-align: center;
+}
+
+img {
+	background: transparent;
+	position: absolute;
+	display: none;
+}
+
+img.bg {
+	display: block;
+}
+
+.dictionary {
+	float: right;
+}
+
+.dmb {
+	text-align: left;
+}
+
+._7a {
+    background: url(spritesheet.png) -0px -0px;
+}
+._7b {
+    background: url(spritesheet.png) -60px -0px;
+}
+._7c {
+    background: url(spritesheet.png) -120px -0px;
+}
+._7d {
+    background: url(spritesheet.png) -180px -0px;
+}
+._7e {
+    background: url(spritesheet.png) -240px -0px;
+}
+._7f {
+    background: url(spritesheet.png) -300px -0px;
+}
+._7g {
+    background: url(spritesheet.png) -360px -0px;
+}
+._7h {
+    background: url(spritesheet.png) -420px -0px;
+}
+._7i {
+    background: url(spritesheet.png) -480px -0px;
+}
+._7j {
+    background: url(spritesheet.png) -540px -0px;
+}
+._7k {
+    background: url(spritesheet.png) -600px -0px;
+}
+._7l {
+    background: url(spritesheet.png) -660px -0px;
+}
+._7m {
+    background: url(spritesheet.png) -720px -0px;
+}
+._7n {
+    background: url(spritesheet.png) -780px -0px;
+}
+._7o {
+    background: url(spritesheet.png) -840px -0px;
+}
+._7p {
+    background: url(spritesheet.png) -900px -0px;
+}
+._7q {
+    background: url(spritesheet.png) -960px -0px;
+}
+._7r {    
+    background: url(spritesheet.png) -1020px -0px;
+}
+._7s {
+    background: url(spritesheet.png) -1080px -0px;
+}
+._7t {
+    background: url(spritesheet.png) -1140px -0px;
+}
+._7u {
+    background: url(spritesheet.png) -1200px -0px;
+}
+._7v {
+    background: url(spritesheet.png) -1260px -0px;
+}
+._7w {
+    background: url(spritesheet.png) -1320px -0px;
+}
+._7x {
+    background: url(spritesheet.png) -1380px -0px;
+}
+._7y {
+    background: url(spritesheet.png) -1440px -0px;
+}
+._7z {
+    background: url(spritesheet.png) -1500px -0px;
+}
+.a {
+    background: url(spritesheet.png) -1560px -0px;
+
+}
+.b {
+    background: url(spritesheet.png) -1620px -0px;
+}
+.c {
+    background: url(spritesheet.png) -1680px -0px;
+}
+.d {
+    background: url(spritesheet.png) -1740px -0px;
+}
+.f {
+    background: url(spritesheet.png) -1800px -0px;
+}
+.e {
+    background: url(spritesheet.png) -1860px -0px;
+}
+.g {
+    background: url(spritesheet.png) -1920px -0px;
+}
+.h {   
+    background: url(spritesheet.png) -1980px -0px;
+}
+.i {   
+    background: url(spritesheet.png) -2040px -0px;
+}
+.j { 
+    background: url(spritesheet.png) -2100px -0px;
+}
+.k {
+    background: url(spritesheet.png) -2160px -0px;
+}
+.l {
+    background: url(spritesheet.png) -2220px -0px;
+}
+.m {
+    background: url(spritesheet.png) -2280px -0px;
+}
+.n {
+    background: url(spritesheet.png) -2340px -0px;
+}
+.o {
+    background: url(spritesheet.png) -2400px -0px;
+}
+.p {
+    background: url(spritesheet.png) -2460px -0px;
+}
+.q {
+    background: url(spritesheet.png) -2520px -0px;
+}
+.r {
+    background: url(spritesheet.png) -2580px -0px;
+}
+.s {
+    background: url(spritesheet.png) -2640px -0px;
+}
+.t {
+    background: url(spritesheet.png) -2700px -0px;
+}
+.u {
+    background: url(spritesheet.png) -2760px -0px;
+}
+.v {
+    background: url(spritesheet.png) -2820px -0px;
+}
+.w {
+    background: url(spritesheet.png) -2880px -0px;
+}
+.x {
+    background: url(spritesheet.png) -2940px -0px;
+}
+.y {
+    background: url(spritesheet.png) -3000px -0px;
+}
+.z { 
+    background: url(spritesheet.png) -3060px -0px;
+}

@@ -48,4 +48,6 @@ function erase() {
 
 function off() {
   document.getElementById("result").innerHTML = "";
+  document.getElementById("left").value = "";
+  document.getElementById("right").value = "";
 }

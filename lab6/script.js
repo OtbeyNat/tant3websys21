@@ -47,5 +47,5 @@ function erase() {
 }
 
 function off() {
-  location.reload();
+  document.getElementById("result").innerHTML = "";
 }

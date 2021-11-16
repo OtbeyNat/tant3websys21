@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $dbconn = new PDO('mysql:host=localhost;dbname=websyslab7','root','@Night69+');
+    $dbconn = new PDO('mysql:host=localhost;dbname=websyslab7','root','root');
     //echo "connected \n";
 } catch (PDOException $e ) {
     echo 'PDO exception thresn: '.$e->getMessage();

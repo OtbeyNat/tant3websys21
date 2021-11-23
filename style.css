@@ -1,0 +1,149 @@
+body{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background: lightblue;
+}
+#main{
+    background: white;
+    width: 80%;
+    height: min-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    background: lightblue; 
+    overflow-x: hidden; 
+    overflow-y: visible;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 24px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left 1s;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #db {
+    display: inline;
+  }
+
+  #func{
+        background: lightblue;
+      width: 100%;
+      padding: 10px 0 0 0;
+  }
+
+  #func button, #func a  {
+      background-color: rgb(119, 184, 214);
+      border: none;
+      color: black;
+      text-decoration: none;
+      transition-duration: 0.5s;
+      padding: 15px 32px;
+  }
+
+  #func a {
+    padding: 14px 32px;
+  }
+  #func button:hover, #func a:hover
+  {
+      background-color: white;
+      border: 2px solid lightskyblue; 
+  }
+
+  #logform {
+      background-color: rgb(161, 218, 253);
+      border: 4px solid rgb(147, 194, 255);
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      text-align: center;
+  }
+
+  #logcontent {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #logform button {
+    background-color: rgba(116, 176, 214, 0.836);
+    border: none;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: 7px 16px;
+  }
+
+  #logform button:hover {
+    background-color: white;
+    border: 2px solid rgba(116, 176, 214, 0.836); 
+  }
+
+  
+
+  #header {
+      background: rgb(220, 242, 255);
+      display: inline-block;
+      padding: 10px 20px 10px 20px;
+      margin-top: 2vh;
+  }
+
+  #preview {
+      padding: 0px 10px 10px 10px;
+      border: 2px solid gray;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #result{
+    background: rgb(173, 222, 241);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cont:nth-of-type(odd) {
+      background: white;
+  }

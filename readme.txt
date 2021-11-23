@@ -14,3 +14,5 @@ To receive the average of only the discounted items, I used the condition WHERE 
 The css I used in the quiz was taken from my previous lab's styling; i just changed the id's of the elements.
 
 Time did not permit me to include advanced css or javascript but I am proud of the fact that I was able to get the functions working
+
+The queries I used took heavy inspiration from lab 7 in which we made the gradebook

@@ -1,0 +1,54 @@
+Part 1
+
+1.1
+One feature of a web application that requires a server side component written in something like PHP is authentication and authorization. In order to have a functioning log in and user accounts, a backend component is necessary to take information from a database and conclude whether or not the user should have access to the page/action. Another feature of a web application that requires server side components is uploading/downloading information. For example there is information on the grades of a course and we want this data posted onto the site. In order to do so, there must be some back end that allows us to upload this information to a database (which PHP and MySQL allows us to do). A third possible feature of a web application that requires server side component is communication between multiple users. If the web application is solely client side, there is no way for the user to talk/message another user somewhere else. Server side and back end components of a web application would take in the message input from the user, store it in a database, and output it so that any user can view the message.
+
+1.2
+One action that can be taken to secure a web application is to salt passwords. Password salting protects private information in the database by adding random strings to the password. This measure can protect against rainbow tables and hackers that consider all possible hashes. A second action that can be taken to secure a web application is to avoid SQL injections. Hackers can input their own SQL queries, and extract or manipulate the server data in a harmful way. One way to avoid SQL injections is to use prepared statements with parameterized queries so that the user cannot input their own.  
+
+
+Part 2
+
+2.1.
+	if (isset($_GET['lname'])) {
+	     if ($_GET['lname'] != '') {
+	        $pstmt = $conn->prepare('SELECT * from customers WHERE lname = :ln');
+	        $pstmt->bindParam('ln', $_GET['lname'], PDO::PARAM_STR);
+	     } else {
+	        echo "lname not given, outputting entire file";
+	        $pstmt = $conn->prepare('SELECT * from customers');
+	     }
+	     $pstmt->execute();
+	     while ($row = $pstmt->fetch(PDO::FETCH_ASSOC)) {
+	        printf("%s %s",$row['fname'],$row['lname']);
+	     }
+	}
+
+The code checks if a lastname has been given by the user. If no last name is given, the code will say no name given and output every customer from the database. If a last name is given,the database then checks all of the customers who have the lastname that the user inputs. Then the code will print out the first and last name of all customers with the last name that the user inputs
+
+Code checks if the value of $_GET['lname'] has changed, which is most likely from a form input field. If the input field has an actual value (not empty) it will prepare a sql query using the PDO object that has connected to the database. The sql query will take all rows in which the column ‘lname’ has the value from the user input. :ln is an argument and bindParam() has the parameters ln (which is in the sql query), $_GET['lname'],which is the value the user input, and PDO::PARAM_STR which defines that the input value is some sort of string. If the user inputs an empty string, then the code output no name given and prepares a sql query for every row in the customer database. In either case whether or not the user input an empty string, the query is executed. The result afterwards is output in a while loop. fetch() takes the next available row from the result of the query. For every available row, the code will print out the associated fname and lname - both of which are the names of columns in the customer database.
+
+
+
+
+
+
+
+
+2.2.
+	$('#trigger').click(function(e) {
+	    $.getJSON('people.json', function(data) {
+			$.each(data.people, function(key, val) {
+				alert(val.name + ", " + val.profession);
+	    });
+	});
+});
+
+Whenever the trigger on the page is click, the page will read from a file and output the name and profession of every person in the file
+
+Whenever the element with the id ‘trigger’ is clicked on, this function runs. What this function does is take the json file ‘people.json’ and returns and array under the variable name data. .each() takes the ‘people’ array from the json file and loops through each of the objects within the array. For every object/person in data.people, the page will send an alert to the page that reads the name and profession.
+
+
+
+Extra Credit:
+???
